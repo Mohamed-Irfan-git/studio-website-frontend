@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contact Form Section */
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;  /* Ensure it adapts to small screens */
+}
+
+/* Form Header */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    text-align: left;
+    font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.contact-form input[type="date"] {
+    padding: 5px;
+}
+
+.contact-form button {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;  /* Full width on small screens */
+}
+
+.contact-form button:hover {
+    background-color: navy;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    /* Adjust padding for smaller screens */
+    .contact-form-container {
+        padding: 15px;
+        width: 90%;  /* Ensure it's not too wide */
+    }
+
+    h2 {
+        font-size: 1.6rem; /* Adjust header size */
+    }
+
+    .contact-form label {
+        font-size: 0.9rem;  /* Slightly smaller labels */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;  /* Slightly smaller input text */
+    }
+
+    .contact-form button {
+        padding: 12px 10px;  /* Adjust padding */
+        font-size: 1rem;  /* Keep button font consistent */
+    }
+}
